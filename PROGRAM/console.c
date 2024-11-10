@@ -14,6 +14,44 @@ void ExecuteConsole()
 	ref ch;
 	int i;
 	int limit;
+
+	// Salty debug code: teleport and add basic items
+	DoReloadCharacterToLocation("Alice_Port", "reload", "reload1");
+	PlaceFleetNearShore("Alice_Port");
+
+	GiveItem2Character(PChar, "compass3");
+	EquipCharacterByItem(pchar, "compass3");
+	GiveItem2Character(pchar, "spyglass4");
+	EquipCharacterByItem(pchar, "spyglass4");
+	GiveItem2Character(pchar, "clock2");
+	EquipCharacterByItem(pchar, "clock2");
+	GiveItem2Character(pchar, "sextant");
+
+	GiveItem2Character(pchar, "mapKhaelRoa");
+	GiveItem2Character(pchar, "mapAntigua");
+	GiveItem2Character(pchar, "mapCayman");
+	GiveItem2Character(pchar, "mapConceicao");
+	GiveItem2Character(pchar, "mapCuba");
+	GiveItem2Character(pchar, "mapDouwesen");
+	GiveItem2Character(pchar, "mapFalaiseDeFleur");
+	GiveItem2Character(pchar, "mapGuadeloupe");
+	GiveItem2Character(pchar, "mapHispaniola");
+	GiveItem2Character(pchar, "mapIslaMuelle");
+	GiveItem2Character(pchar, "mapOxbay");
+	GiveItem2Character(pchar, "mapQuebradasCostillas");
+	GiveItem2Character(pchar, "mapRedmond");
+	GiveItem2Character(pchar, "mapSaintMartin");
+	GiveItem2Character(pchar, "mapTurks");
+	GiveItem2Character(pchar, "mapAruba");
+	GiveItem2Character(pchar, "mapCuracao");
+	GiveItem2Character(pchar, "mapEleuthera");
+	GiveItem2Character(pchar, "mapRedmond_Dungeon");
+	GiveItem2Character(pchar, "mapOxbay_Dungeon");
+	GiveItem2Character(pchar, "mapOxbay_Cave");
+	GiveItem2Character(pchar, "mapDouwesen_Cave");
+	GiveItem2Character(pchar, "mapKhaelRoa_TempleGround");
+	GiveItem2Character(pchar, "mapKhaelRoa_TempleUpper");
+	// Salty debug end
 											// Case 0 = Enable reload (useful when you get stuck on boarding) + Set player type (if you cannot move anymore)
 	switch(0)								// Case 1 = Various test and cheat codes
 	{										// Case 2 = Location coordinate information
