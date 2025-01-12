@@ -47,6 +47,7 @@
 #include "CCCdirectsail.c" // ccc Jan07, directsail code
 #include "elrapido.c" // El Rapido
 #include "MAXIMUS_Functions.c" // MAXIMUS
+#include "RADCLYFFE_Functions.c" // Radclyffe
 #include "KB_routines.c"  // KBlack - to accomodate functions from other mods - initially for tuning ships mod
 #include "Periods.c" // KK
 #include "Screwface_functions.c" // Screwface

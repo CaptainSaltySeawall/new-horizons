@@ -10,6 +10,12 @@ void QuestComplete(string sQuestName)
 // <-- KK
 	aref arship; // PB
 
+	// Quests for Radclyffe storyline starts with "RC_"
+	if (strleft(sQuestName, 3) == "RC_") {
+	  RadclyffeQuestComplete(sQuestName);
+	  return;
+	}
+
 	PChar = GetMainCharacter();
 
 	switch(sQuestName)

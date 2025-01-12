@@ -15,6 +15,11 @@ void StartStoryLine()
 	int loc = FindLocation(arstart.location);
 	int iNation = GetCurrentFlag();
 
+	if (isRadclyffe(PChar)) {
+	  RadclyffeStartStory();
+	  return;
+	}
+
 	sTeleportLocName = arstart.location;
 
 	// PB: Override Character Type -->
